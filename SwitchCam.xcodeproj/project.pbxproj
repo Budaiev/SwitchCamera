@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3882D7E226A115300C48875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3882D7D226A115300C48875 /* AppDelegate.swift */; };
+		C3882D80226A115300C48875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3882D7F226A115300C48875 /* ViewController.swift */; };
+		C3882D83226A115300C48875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3882D81226A115300C48875 /* Main.storyboard */; };
+		C3882D85226A115400C48875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3882D84226A115400C48875 /* Assets.xcassets */; };
+		C3882D88226A115400C48875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3882D86226A115400C48875 /* LaunchScreen.storyboard */; };
+		C3882D93226A115400C48875 /* SwitchCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3882D92226A115400C48875 /* SwitchCamTests.swift */; };
+		C3882D9E226A115400C48875 /* SwitchCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3882D9D226A115400C48875 /* SwitchCamUITests.swift */; };
+		C3882DAC226A128C00C48875 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3882DAB226A128C00C48875 /* CameraViewController.swift */; };
+		C3882DB0226A1C4200C48875 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = C3882DAF226A1C4200C48875 /* Camera.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3882D8F226A115400C48875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3882D72226A115300C48875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3882D79226A115300C48875;
+			remoteInfo = SwitchCam;
+		};
+		C3882D9A226A115400C48875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3882D72226A115300C48875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3882D79226A115300C48875;
+			remoteInfo = SwitchCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3882D7A226A115300C48875 /* SwitchCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3882D7D226A115300C48875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3882D7F226A115300C48875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3882D82226A115300C48875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3882D84226A115400C48875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3882D87226A115400C48875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3882D89226A115400C48875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3882D8E226A115400C48875 /* SwitchCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3882D92226A115400C48875 /* SwitchCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCamTests.swift; sourceTree = "<group>"; };
+		C3882D94226A115400C48875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3882D99226A115400C48875 /* SwitchCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3882D9D226A115400C48875 /* SwitchCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCamUITests.swift; sourceTree = "<group>"; };
+		C3882D9F226A115400C48875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3882DAB226A128C00C48875 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C3882DAD226A1C2500C48875 /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		C3882DAE226A1C4100C48875 /* SwitchCam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchCam-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3882DAF226A1C4200C48875 /* Camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3882D77226A115300C48875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3882D8B226A115400C48875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3882D96226A115400C48875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3882D71226A115300C48875 = {
+			isa = PBXGroup;
+			children = (
+				C3882D7C226A115300C48875 /* SwitchCam */,
+				C3882D91226A115400C48875 /* SwitchCamTests */,
+				C3882D9C226A115400C48875 /* SwitchCamUITests */,
+				C3882D7B226A115300C48875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3882D7B226A115300C48875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3882D7A226A115300C48875 /* SwitchCam.app */,
+				C3882D8E226A115400C48875 /* SwitchCamTests.xctest */,
+				C3882D99226A115400C48875 /* SwitchCamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3882D7C226A115300C48875 /* SwitchCam */ = {
+			isa = PBXGroup;
+			children = (
+				C3882D7D226A115300C48875 /* AppDelegate.swift */,
+				C3882D7F226A115300C48875 /* ViewController.swift */,
+				C3882DAB226A128C00C48875 /* CameraViewController.swift */,
+				C3882DAD226A1C2500C48875 /* Camera.h */,
+				C3882DAF226A1C4200C48875 /* Camera.m */,
+				C3882D81226A115300C48875 /* Main.storyboard */,
+				C3882D84226A115400C48875 /* Assets.xcassets */,
+				C3882D86226A115400C48875 /* LaunchScreen.storyboard */,
+				C3882D89226A115400C48875 /* Info.plist */,
+				C3882DAE226A1C4100C48875 /* SwitchCam-Bridging-Header.h */,
+			);
+			path = SwitchCam;
+			sourceTree = "<group>";
+		};
+		C3882D91226A115400C48875 /* SwitchCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3882D92226A115400C48875 /* SwitchCamTests.swift */,
+				C3882D94226A115400C48875 /* Info.plist */,
+			);
+			path = SwitchCamTests;
+			sourceTree = "<group>";
+		};
+		C3882D9C226A115400C48875 /* SwitchCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3882D9D226A115400C48875 /* SwitchCamUITests.swift */,
+				C3882D9F226A115400C48875 /* Info.plist */,
+			);
+			path = SwitchCamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3882D79226A115300C48875 /* SwitchCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3882DA2226A115400C48875 /* Build configuration list for PBXNativeTarget "SwitchCam" */;
+			buildPhases = (
+				C3882D76226A115300C48875 /* Sources */,
+				C3882D77226A115300C48875 /* Frameworks */,
+				C3882D78226A115300C48875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchCam;
+			productName = SwitchCam;
+			productReference = C3882D7A226A115300C48875 /* SwitchCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3882D8D226A115400C48875 /* SwitchCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3882DA5226A115400C48875 /* Build configuration list for PBXNativeTarget "SwitchCamTests" */;
+			buildPhases = (
+				C3882D8A226A115400C48875 /* Sources */,
+				C3882D8B226A115400C48875 /* Frameworks */,
+				C3882D8C226A115400C48875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3882D90226A115400C48875 /* PBXTargetDependency */,
+			);
+			name = SwitchCamTests;
+			productName = SwitchCamTests;
+			productReference = C3882D8E226A115400C48875 /* SwitchCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3882D98226A115400C48875 /* SwitchCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3882DA8226A115400C48875 /* Build configuration list for PBXNativeTarget "SwitchCamUITests" */;
+			buildPhases = (
+				C3882D95226A115400C48875 /* Sources */,
+				C3882D96226A115400C48875 /* Frameworks */,
+				C3882D97226A115400C48875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3882D9B226A115400C48875 /* PBXTargetDependency */,
+			);
+			name = SwitchCamUITests;
+			productName = SwitchCamUITests;
+			productReference = C3882D99226A115400C48875 /* SwitchCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3882D72226A115300C48875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ab.name;
+				TargetAttributes = {
+					C3882D79226A115300C48875 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					C3882D8D226A115400C48875 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C3882D79226A115300C48875;
+					};
+					C3882D98226A115400C48875 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C3882D79226A115300C48875;
+					};
+				};
+			};
+			buildConfigurationList = C3882D75226A115300C48875 /* Build configuration list for PBXProject "SwitchCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3882D71226A115300C48875;
+			productRefGroup = C3882D7B226A115300C48875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3882D79226A115300C48875 /* SwitchCam */,
+				C3882D8D226A115400C48875 /* SwitchCamTests */,
+				C3882D98226A115400C48875 /* SwitchCamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3882D78226A115300C48875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3882D88226A115400C48875 /* LaunchScreen.storyboard in Resources */,
+				C3882D85226A115400C48875 /* Assets.xcassets in Resources */,
+				C3882D83226A115300C48875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3882D8C226A115400C48875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3882D97226A115400C48875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3882D76226A115300C48875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3882DB0226A1C4200C48875 /* Camera.m in Sources */,
+				C3882D80226A115300C48875 /* ViewController.swift in Sources */,
+				C3882D7E226A115300C48875 /* AppDelegate.swift in Sources */,
+				C3882DAC226A128C00C48875 /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3882D8A226A115400C48875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3882D93226A115400C48875 /* SwitchCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3882D95226A115400C48875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3882D9E226A115400C48875 /* SwitchCamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3882D90226A115400C48875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3882D79226A115300C48875 /* SwitchCam */;
+			targetProxy = C3882D8F226A115400C48875 /* PBXContainerItemProxy */;
+		};
+		C3882D9B226A115400C48875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3882D79226A115300C48875 /* SwitchCam */;
+			targetProxy = C3882D9A226A115400C48875 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3882D81226A115300C48875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3882D82226A115300C48875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3882D86226A115400C48875 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3882D87226A115400C48875 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3882DA0226A115400C48875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3882DA1226A115400C48875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3882DA3226A115400C48875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G8WF4F74WD;
+				INFOPLIST_FILE = SwitchCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ab.org.SwitchCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = OwnBudaievWildcard;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwitchCam/SwitchCam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3882DA4226A115400C48875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G8WF4F74WD;
+				INFOPLIST_FILE = SwitchCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ab.org.SwitchCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = OwnBudaievWildcard;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwitchCam/SwitchCam-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3882DA6226A115400C48875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwitchCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ab.org.SwitchCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchCam.app/SwitchCam";
+			};
+			name = Debug;
+		};
+		C3882DA7226A115400C48875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwitchCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ab.org.SwitchCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchCam.app/SwitchCam";
+			};
+			name = Release;
+		};
+		C3882DA9226A115400C48875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwitchCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ab.org.SwitchCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwitchCam;
+			};
+			name = Debug;
+		};
+		C3882DAA226A115400C48875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwitchCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ab.org.SwitchCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwitchCam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3882D75226A115300C48875 /* Build configuration list for PBXProject "SwitchCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3882DA0226A115400C48875 /* Debug */,
+				C3882DA1226A115400C48875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3882DA2226A115400C48875 /* Build configuration list for PBXNativeTarget "SwitchCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3882DA3226A115400C48875 /* Debug */,
+				C3882DA4226A115400C48875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3882DA5226A115400C48875 /* Build configuration list for PBXNativeTarget "SwitchCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3882DA6226A115400C48875 /* Debug */,
+				C3882DA7226A115400C48875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3882DA8226A115400C48875 /* Build configuration list for PBXNativeTarget "SwitchCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3882DA9226A115400C48875 /* Debug */,
+				C3882DAA226A115400C48875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3882D72226A115300C48875 /* Project object */;
+}

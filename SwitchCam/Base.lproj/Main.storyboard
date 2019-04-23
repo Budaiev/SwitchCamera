@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BSz-0Q-NHQ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwitchCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srK-lo-Tuf">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="toCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVL-ej-cAm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="srK-lo-Tuf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KJM-dt-NdO"/>
+                            <constraint firstItem="srK-lo-Tuf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="REh-KB-0zh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1m2-b8-4Yu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="171"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="Pn0-ik-zgZ">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="Cos-bv-fks" customClass="CameraViewController" customModule="SwitchCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0OA-kV-NI5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zul-hf-XO4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="auC-cf-Lx5">
+                                <rect key="frame" x="306" y="670" width="100" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="uos-qM-Udf"/>
+                                    <constraint firstAttribute="height" constant="140" id="wvG-RN-8Bi"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-OW-2Of">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ymp-xn-L72"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Switch Camera" id="uDq-YN-2Ac">
+                                        <connections>
+                                            <action selector="onSwitchCamera:" destination="Cos-bv-fks" id="s4C-tS-Po1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="M7P-4T-ngH"/>
+                                    <barButtonItem title="Test" id="UCo-He-2eX">
+                                        <connections>
+                                            <action selector="onTakePhoto:" destination="Cos-bv-fks" id="FHr-bt-R2B"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GaM-OW-2Of" firstAttribute="trailing" secondItem="nV1-NB-czc" secondAttribute="trailing" id="DlH-Pj-VFq"/>
+                            <constraint firstItem="GaM-OW-2Of" firstAttribute="top" secondItem="Zul-hf-XO4" secondAttribute="bottom" id="HFd-NY-T9m"/>
+                            <constraint firstItem="Zul-hf-XO4" firstAttribute="leading" secondItem="nV1-NB-czc" secondAttribute="leading" id="NGd-hg-rhf"/>
+                            <constraint firstItem="nV1-NB-czc" firstAttribute="trailing" secondItem="Zul-hf-XO4" secondAttribute="trailing" id="OAh-m6-hct"/>
+                            <constraint firstItem="nV1-NB-czc" firstAttribute="trailing" secondItem="auC-cf-Lx5" secondAttribute="trailing" constant="8" id="fqw-sh-B4E"/>
+                            <constraint firstItem="Zul-hf-XO4" firstAttribute="top" secondItem="0OA-kV-NI5" secondAttribute="top" id="gbw-f2-kno"/>
+                            <constraint firstItem="GaM-OW-2Of" firstAttribute="leading" secondItem="nV1-NB-czc" secondAttribute="leading" id="jmn-2x-r3v"/>
+                            <constraint firstItem="GaM-OW-2Of" firstAttribute="top" secondItem="auC-cf-Lx5" secondAttribute="bottom" constant="8" id="seh-oK-omP"/>
+                            <constraint firstItem="GaM-OW-2Of" firstAttribute="bottom" secondItem="nV1-NB-czc" secondAttribute="bottom" id="tp4-J8-28t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nV1-NB-czc"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoPreviewImageView" destination="auC-cf-Lx5" id="CNL-d6-yqL"/>
+                        <outlet property="previewView" destination="Zul-hf-XO4" id="ST5-bQ-N0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dH-Wl-mEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000.0000000000002" y="170.75892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DU4-FR-kMy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BSz-0Q-NHQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N7R-0E-rt5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TU2-M1-yjm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5C-fU-e79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="172"/>
+        </scene>
+    </scenes>
+</document>
