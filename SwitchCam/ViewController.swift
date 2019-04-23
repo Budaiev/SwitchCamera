@@ -34,7 +34,8 @@ class ViewController: UIViewController {
                                                                   animated: true,
                                                                   completion: {
                                                                     
-                                                                    self.cameraVC!.setupCamera()
+                                                                    //self.cameraVC!.setupCamera()
+                                                                    self.cameraVC!.setupObjCCamera()
                     })
                     
                 } else {
@@ -59,7 +60,8 @@ class ViewController: UIViewController {
                                                           animated: true,
                                                           completion: {
                                                             
-                                                            self.cameraVC!.setupCamera()
+                                                            //self.cameraVC!.setupCamera()
+                                                            self.cameraVC!.setupObjCCamera()
             })
             
         @unknown default:

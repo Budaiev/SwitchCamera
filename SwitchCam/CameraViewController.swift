@@ -13,6 +13,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     var camType:CameraType = .back
     
+    var cameraObjC:Camera = Camera.create()
+    
     @IBOutlet weak var previewView: UIView!
     
     @IBOutlet weak var photoPreviewImageView: UIImageView!
@@ -37,8 +39,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setupSession()
-        
+//        setupSession()
+        cameraObjC.setupSession()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,7 +52,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        captureSession!.stopRunning()
+//        captureSession!.stopRunning()
+        cameraObjC.stopRun()
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,12 +66,17 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         if let cameraDevice = AVCaptureDevice.DiscoverySession.init(deviceTypes: [AVCaptureDevice.DeviceType.builtInWideAngleCamera], mediaType: .video, position: position).devices.first { //}.localizedName {
             
-            /// print("camera: \(cameraDevice.localizedName)") Back/Front Camera
+//            print("camera: \(cameraDevice.localizedName)") Back/Front Camera
             
             return cameraDevice
         }
         
         return nil
+    }
+    
+    public func setupObjCCamera() {
+        
+        cameraObjC.setupCamera(withType: self.camType.rawValue, castTo: self.previewView)
     }
     
     public func setupCamera() {
@@ -128,24 +136,29 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         
-        stillImageOutput!.capturePhoto(with: settings, delegate: self)
+//        stillImageOutput!.capturePhoto(with: settings, delegate: self)
+        
+        self.cameraObjC.stillImageOutput!.capturePhoto(with: settings, delegate: self)
     }
     
     
     @IBAction func onSwitchCamera(_ sender: Any) {
         
-        captureSession!.stopRunning()
+//        captureSession!.stopRunning()
+        cameraObjC.stopRun()
         
         self.camType.toggle()
         
-        setupSession()
+//        setupSession()
+        cameraObjC.setupSession()
         
         UIView.transition(with: previewView,
                           duration: 0.25,
                           options: [.transitionFlipFromRight],
                           animations: {
                             
-                            self.setupCamera()
+                            self.cameraObjC.setupCamera(withType: self.camType.rawValue, castTo: self.previewView)
+                            //self.setupCamera()
                             
         }, completion: nil)
     }
